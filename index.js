@@ -5,6 +5,7 @@ import { error } from "node:console";
 
 const servidor = express();
 servidor.use(express.json());
+servidor.use(express.static("public"));
 servidor.use("/",routes);
 
 
